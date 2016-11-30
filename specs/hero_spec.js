@@ -15,5 +15,9 @@ describe("Dr Strange", function(){
     assert.equal(100, heroes[0].health);
   });
 
+  it("should return favorite food", function(){
+    assert.equal("chocolate frogs", heroes[1].faveFood);
+  })
+
 
 });
