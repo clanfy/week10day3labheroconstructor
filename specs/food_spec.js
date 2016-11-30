@@ -3,9 +3,10 @@ var shrooms = foods[0];
 var chocolateFrogs = foods[1];
 var donuts = foods[2];
 var kale = foods[3];
+var scabbers = require("../rat");
 var assert = require("assert");
 
-describe("foods", function(){
+describe("Foods", function(){
 
   it("should return names", function(){
     assert.equal("shrooms", shrooms.name);
@@ -28,4 +29,14 @@ describe("foods", function(){
     assert.equal(false, kale.poisonous);
   });
 
+  it("should confirm that food is poisoned", function(){
+    scabbers.poison(shrooms);
+    assert.equal(true, shrooms.poisonous);
+  });
+
 });
+
+
+
+
+

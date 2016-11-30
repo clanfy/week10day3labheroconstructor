@@ -28,17 +28,19 @@ describe("Hero", function(){
 
   it("should be able to talk", function(){
     assert.equal("Good day, I am Stephen Strange and I am here to do my thing.", drStrange.talk());
-  })
+  });
 
-  it("eating should increase health", function(){
+  it("eating food that isn't fave should increase health", function(){
     drStrange.eat(kale);
     assert.equal(120, drStrange.health);
-  })
+  });
 
   it("eating fave food increases health by 1.5 value", function(){
     harry.eat(chocolateFrogs);
     assert.equal(72.5, harry.health);
-  })
+  });
+
+
 
 
 
