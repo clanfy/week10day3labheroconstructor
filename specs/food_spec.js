@@ -10,4 +10,11 @@ describe("foods", function(){
     assert.equal("kale", foods[3].name);
   });
 
+  it("should return replenishment value", function(){
+    assert.equal(10, foods[0].replenishmentValue);
+    assert.equal(15, foods[1].replenishmentValue);
+    assert.equal(5, foods[2].replenishmentValue);
+    assert.equal(20, foods[3].replenishmentValue);
+  })
+
 });
