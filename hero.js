@@ -7,7 +7,7 @@ var Hero = function(name, health, faveFood){
 Hero.prototype = {
   talk: function(){
     return "Good day, I am " + this.name + " and I am here to do my thing."
-  };
+  }
 };
 
 var drStrange = new Hero("Stephen Strange", 100, "shrooms");
