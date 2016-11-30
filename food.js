@@ -9,4 +9,4 @@ var chocolateFrogs = new Food("chocolate frogs", 15, false);
 var donuts = new Food("donuts", 5, false);
 var kale = new Food("kale", 20, false);
 
-module.exports = [shrooms, chocolateFrogs, donuts,kale];
+module.exports = [shrooms, chocolateFrogs, donuts, kale];
