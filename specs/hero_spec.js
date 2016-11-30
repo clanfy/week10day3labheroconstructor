@@ -45,9 +45,11 @@ describe("Hero", function(){
     assert.equal(117.5, drStrange.health);
   })
 
-
-
-
+  it("eating okay food increases health, then eating poisoned food reduces it", function(){
+    harry.eat(kale);
+    harry.eat(donuts);
+    assert.equal(90.0, harry.health);
+  })
 
 
 });
