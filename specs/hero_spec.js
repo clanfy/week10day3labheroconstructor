@@ -17,6 +17,10 @@ describe("Dr Strange", function(){
 
   it("should return favorite food", function(){
     assert.equal("chocolate frogs", heroes[1].faveFood);
+  });
+
+  it("should be able to talk", function(){
+    assert.equal("Good day, I am Stephen Strange and I am here to do my thing.", heroes[0].talk());
   })
 
 
