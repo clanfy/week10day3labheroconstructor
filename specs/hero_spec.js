@@ -3,6 +3,9 @@ var drStrange = heroes[0];
 var harry = heroes[1];
 var foods = heroes[2];
 var shrooms = foods[0]
+var chocolateFrogs = foods[1]
+var donuts = foods[2]
+var kale = foods[3]
 var assert = require("assert");
 
 describe("Hero", function(){
@@ -28,8 +31,13 @@ describe("Hero", function(){
   })
 
   it("eating should increase health", function(){
-    drStrange.eat(shrooms);
-    assert.equal(110, drStrange.health);
+    drStrange.eat(kale);
+    assert.equal(120, drStrange.health);
+  })
+
+  it("eating fave food increases health by 1.5 value", function(){
+    harry.eat(chocolateFrogs);
+    assert.equal(72.5, harry.health);
   })
 
 
