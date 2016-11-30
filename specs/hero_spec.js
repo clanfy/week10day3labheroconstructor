@@ -40,6 +40,11 @@ describe("Hero", function(){
     assert.equal(72.5, harry.health);
   });
 
+  it("eating poisoned food reduces health", function(){
+    drStrange.eat(donuts);
+    assert.equal(117.5, drStrange.health);
+  })
+
 
 
 
