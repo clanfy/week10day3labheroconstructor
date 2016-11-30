@@ -1,27 +1,38 @@
 var heroes = require("../hero");
+var drStrange = heroes[0];
+var harry = heroes[1];
+var foods = heroes[2];
+var shrooms = foods[0]
 var assert = require("assert");
 
-describe("Dr Strange", function(){
+describe("Hero", function(){
 
   it("should return the Dr's name", function(){
-    assert.equal("Stephen Strange", heroes[0].name);
+    assert.equal("Stephen Strange", drStrange.name);
   });
 
   it("should return the wizard's name", function(){
-    assert.equal("Harry Potter", heroes[1].name);
+    assert.equal("Harry Potter", harry.name);
   });
 
   it("should return health", function(){
-    assert.equal(100, heroes[0].health);
+    assert.equal(100, drStrange.health);
   });
 
   it("should return favorite food", function(){
-    assert.equal("chocolate frogs", heroes[1].faveFood);
+    assert.equal("chocolate frogs", harry.faveFood);
   });
 
   it("should be able to talk", function(){
-    assert.equal("Good day, I am Stephen Strange and I am here to do my thing.", heroes[0].talk());
+    assert.equal("Good day, I am Stephen Strange and I am here to do my thing.", drStrange.talk());
   })
+
+  it("eating should increase health", function(){
+    drStrange.eat(shrooms);
+    assert.equal(110, drStrange.health);
+  })
+
+
 
 
 });
