@@ -43,13 +43,18 @@ describe("Hero", function(){
   it("eating poisoned food reduces health", function(){
     drStrange.eat(donuts);
     assert.equal(117.5, drStrange.health);
-  })
+  });
 
   it("eating okay food increases health, then eating poisoned food reduces it", function(){
     harry.eat(kale);
     harry.eat(donuts);
     assert.equal(90.0, harry.health);
-  })
+  });
+
+  it("eating poisoned fave food should reduce health", function(){
+    drStrange.eat(shrooms);
+    assert.equal(112.5, drStrange.health);
+  });
 
 
 });

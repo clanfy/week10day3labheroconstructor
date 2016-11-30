@@ -31,7 +31,9 @@ describe("Foods", function(){
 
   it("should confirm that food is poisoned", function(){
     scabbers.poison(donuts);
+    scabbers.poison(shrooms);
     assert.equal(true, donuts.poisonous);
+    assert.equal(true, shrooms.poisonous);
   });
 
 });
