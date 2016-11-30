@@ -17,4 +17,11 @@ describe("foods", function(){
     assert.equal(20, foods[3].replenishmentValue);
   })
 
+  it("should return whether it is poisonous", function(){
+    assert.equal(false, foods[0].poisonous);
+    assert.equal(false, foods[1].poisonous);
+    assert.equal(false, foods[2].poisonous);
+    assert.equal(false, foods[3].poisonous);
+  })
+
 });
