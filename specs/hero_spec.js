@@ -11,6 +11,9 @@ describe("Dr Strange", function(){
     assert.equal("Harry Potter", heroes[1].name);
   });
 
+  it("should return health", function(){
+    assert.equal(100, heroes[0].health);
+  });
 
 
 });
